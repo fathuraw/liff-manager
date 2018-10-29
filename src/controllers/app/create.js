@@ -10,7 +10,6 @@ function _view(req, res) {
 
 async function _store(req, res) {
   if (!URLValidation(req.body.url)) {
-    // return res.send(`Bad Request\n<pre>URL not valid</pre>`)
     const msg = {
       error_description: 'Bad Request, URL not valid'
     }
